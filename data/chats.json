@@ -10,22 +10,13 @@
       "photo": "/images/chats/thara.webp"
     },
     {
-      "nom": "Nom à venir",
-      "role": "Reproductrice",
-      "couleur": "",
-      "date_naissance": "",
-      "loof": "",
-      "caractere": "",
-      "photo": ""
-    },
-    {
-      "nom": "Nom à venir",
+      "nom": "Yoda",
       "role": "Reproducteur",
-      "couleur": "",
-      "date_naissance": "",
+      "couleur": "Black Blotched Tabby et Blanc",
+      "date_naissance": "27/01/2024",
       "loof": "",
       "caractere": "",
-      "photo": ""
+      "photo": "/images/uploads/image_2026-09-20_173658719.png"
     }
   ]
 }
