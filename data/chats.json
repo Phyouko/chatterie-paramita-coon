@@ -1,0 +1,31 @@
+{
+  "chats": [
+    {
+      "nom": "Thara des Elfes d'Or",
+      "role": "Reproductrice",
+      "couleur": "Bleu Tortie Smoke",
+      "date_naissance": "09/05/2022",
+      "loof": "",
+      "caractere": "",
+      "photo": "/images/chats/thara.webp"
+    },
+    {
+      "nom": "Nom à venir",
+      "role": "Reproductrice",
+      "couleur": "",
+      "date_naissance": "",
+      "loof": "",
+      "caractere": "",
+      "photo": ""
+    },
+    {
+      "nom": "Nom à venir",
+      "role": "Reproducteur",
+      "couleur": "",
+      "date_naissance": "",
+      "loof": "",
+      "caractere": "",
+      "photo": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "chats"
+    label: "Mes chats (reproducteurs & reproductrices)"
+    files:
+      - name: "chats"
+        label: "Liste des chats"
+        file: "data/chats.json"
+        fields:
+          - label: "Chats"
+            name: "chats"
+            widget: "list"
+            summary: "{{nom}} — {{role}}"
+            fields:
+              - {label: "Nom", name: "nom", widget: "string"}
+              - {label: "Rôle", name: "role", widget: "select", options: ["Reproductrice", "Reproducteur"]}
+              - {label: "Couleur", name: "couleur", widget: "string", required: false}
+              - {label: "Date de naissance", name: "date_naissance", widget: "string", required: false, hint: "Format libre, ex. 09/05/2022"}
+              - {label: "LOOF", name: "loof", widget: "string", required: false}
+              - {label: "Caractère", name: "caractere", widget: "text", required: false}
+              - {label: "Photo", name: "photo", widget: "image", required: false}
+
+  - name: "chatons"
+    label: "Chatons disponibles"
+    files:
+      - name: "chatons"
+        label: "Liste des chatons"
+        file: "data/chatons.json"
+        fields:
+          - label: "Chatons"
+            name: "chatons"
+            widget: "list"
+            summary: "{{nom}} — {{statut}}"
+            fields:
+              - {label: "Nom", name: "nom", widget: "string"}
+              - {label: "Sexe", name: "sexe", widget: "select", options: ["Mâle", "Femelle"], required: false}
+              - {label: "Date de naissance", name: "date_naissance", widget: "string", required: false}
+              - {label: "Prix", name: "prix", widget: "string", required: false, hint: "Ex. 1200€ ou « me consulter »"}
+              - {label: "Statut", name: "statut", widget: "select", options: ["Disponible", "Réservé", "Bientôt disponible"]}
+              - {label: "Photo", name: "photo", widget: "image", required: false}

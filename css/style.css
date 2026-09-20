@@ -302,6 +302,36 @@ section[id] { scroll-margin-top: 88px; }
 .pet-character { font-style: italic; color: var(--text-on-light-soft); font-size: 0.94rem; margin-bottom: 0; }
 .pet-note { text-align: center; max-width: 640px; margin: 2.6rem auto 0; color: var(--text-on-light-soft); font-size: 0.95rem; }
 
+/* Carrousel horizontal (chatons disponibles) */
+.pet-carousel-wrap { display: flex; align-items: center; gap: 1rem; }
+.pet-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.3rem 0.2rem 1.1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sage-medium) var(--sage-pale);
+}
+.pet-carousel::-webkit-scrollbar { height: 8px; }
+.pet-carousel::-webkit-scrollbar-track { background: var(--sage-pale); border-radius: 999px; }
+.pet-carousel::-webkit-scrollbar-thumb { background: var(--sage-medium); border-radius: 999px; }
+.pet-carousel .pet-card { flex: 0 0 280px; scroll-snap-align: start; }
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-soft);
+  background: var(--cream);
+  color: var(--sage-deep);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.carousel-arrow:hover { background: var(--sage-pale); transform: translateY(-1px); }
+
 /* Valeurs / engagements */
 .value-card {
   background: rgba(253, 252, 247, 0.08);

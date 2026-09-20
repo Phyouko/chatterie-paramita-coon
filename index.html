@@ -31,6 +31,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -133,51 +134,11 @@
     <p>Mes chats sont sélectionnés avec soin pour leur santé, leur type et leur caractère. Les fiches détaillées de chacun arrivent bientôt — contactez-moi pour en savoir plus dès aujourd'hui.</p>
   </div>
   <div class="container">
-    <div class="grid grid-3">
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill">Reproductrice</span>
-          <!-- Pour ajouter une vraie photo : insérer ici <img src="images/chats/nom.jpg" alt="..."> -->
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Couleur :</strong> à préciser</li>
-            <li><strong>LOOF :</strong> à préciser</li>
-          </ul>
-          <p class="pet-character">Caractère à préciser.</p>
-        </div>
-      </article>
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill">Reproductrice</span>
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Couleur :</strong> à préciser</li>
-            <li><strong>LOOF :</strong> à préciser</li>
-          </ul>
-          <p class="pet-character">Caractère à préciser.</p>
-        </div>
-      </article>
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill role-male">Reproducteur</span>
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Couleur :</strong> à préciser</li>
-            <li><strong>LOOF :</strong> à préciser</li>
-          </ul>
-          <p class="pet-character">Caractère à préciser.</p>
-        </div>
-      </article>
-    </div>
+    <!--
+      Ces fiches sont générées depuis data/chats.json (js/chats.js).
+      Pour ajouter/modifier/retirer un chat : interface d'administration sur /admin
+    -->
+    <div class="grid grid-3" id="chats-grid"></div>
   </div>
 </section>
 
@@ -188,50 +149,14 @@
     <p>Cette liste sera mise à jour au fil des naissances. Contactez-moi pour connaître les disponibilités actuelles.</p>
   </div>
   <div class="container">
-    <div class="grid grid-3">
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill status-soon">Bientôt disponible</span>
-          <!-- Pour ajouter une vraie photo : insérer ici <img src="images/chatons/nom.jpg" alt="..."> -->
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Sexe :</strong> à préciser</li>
-            <li><strong>Née le :</strong> à préciser</li>
-            <li><strong>Prix :</strong> me consulter</li>
-          </ul>
-        </div>
-      </article>
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill">Disponible</span>
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Sexe :</strong> à préciser</li>
-            <li><strong>Née le :</strong> à préciser</li>
-            <li><strong>Prix :</strong> me consulter</li>
-          </ul>
-        </div>
-      </article>
-      <article class="pet-card">
-        <div class="pet-photo">
-          <span class="pet-pill status-reserved">Réservé</span>
-          <svg viewBox="0 0 64 56"><ellipse cx="32" cy="40" rx="15" ry="12"/><ellipse cx="12" cy="22" rx="6.5" ry="8.5"/><ellipse cx="25" cy="10" rx="6.5" ry="8.5"/><ellipse cx="41" cy="10" rx="6.5" ry="8.5"/><ellipse cx="53" cy="22" rx="6.5" ry="8.5"/></svg>
-        </div>
-        <div class="pet-body">
-          <h3>Nom à venir</h3>
-          <ul class="pet-facts">
-            <li><strong>Sexe :</strong> à préciser</li>
-            <li><strong>Née le :</strong> à préciser</li>
-            <li><strong>Prix :</strong> me consulter</li>
-          </ul>
-        </div>
-      </article>
+    <!--
+      Ces fiches sont générées depuis data/chatons.json (js/chatons.js).
+      Pour ajouter/modifier/retirer un chaton : interface d'administration sur /admin
+    -->
+    <div class="pet-carousel-wrap">
+      <button class="carousel-arrow carousel-prev" aria-label="Chaton précédent">‹</button>
+      <div class="pet-carousel" id="chatons-carousel"></div>
+      <button class="carousel-arrow carousel-next" aria-label="Chaton suivant">›</button>
     </div>
     <p class="pet-note">Aucun chaton ne correspond à vos attentes pour le moment ? Contactez-moi pour être averti(e) en priorité des prochaines naissances.</p>
   </div>
@@ -413,5 +338,18 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/chats.js"></script>
+<script src="js/chatons.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

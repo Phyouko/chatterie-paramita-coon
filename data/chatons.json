@@ -1,0 +1,28 @@
+{
+  "chatons": [
+    {
+      "nom": "Nom à venir",
+      "sexe": "",
+      "date_naissance": "",
+      "prix": "",
+      "statut": "Bientôt disponible",
+      "photo": ""
+    },
+    {
+      "nom": "Nom à venir",
+      "sexe": "",
+      "date_naissance": "",
+      "prix": "",
+      "statut": "Disponible",
+      "photo": ""
+    },
+    {
+      "nom": "Nom à venir",
+      "sexe": "",
+      "date_naissance": "",
+      "prix": "",
+      "statut": "Réservé",
+      "photo": ""
+    }
+  ]
+}
